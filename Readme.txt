@@ -1,0 +1,19 @@
+Instalar 
+	- npm i -g postcss
+	- npm i --save-dev gulp gulp-postcss browser-sync
+	- npm i --save-dev autoprefixer //Plugin postcss prefijos -moz o  -webkit- pordefecto
+	- npm i --save-dev postcss-nested // plugin para anidar class
+	- npm i --save-dev postcss-cssnext // contiente varos plugins entre ellos autoprefixer
+	- npm i --save-dev postcss-mixins // reutilizar codigo
+	- npm i --save-dev postcss-import // importar archivos 
+	- npm i --save-dev lost // Responsive
+	- npm i --save-dev csswring // mimificar 
+	- npm i --save-dev rucksack-css  // fuentes responsivas 
+	- npm i --save-dev css-mqpacker// oredenar el css
+	- npm i --save react react-dom
+	- npm i -D webpack
+	- npm i -D babel-core babel-loader babel-preset-latest-minimal babel-preset-react json-loader
+	- npm i -S react-router@next
+	- npm i -D babel-plugin-transform-es2015-modules-commonjs  babel-preset-es2016 babel-preset-es2017
+	- npm i -S react-router-dom
+	- npm i -D css-loader style-loader  extract-text-webpack-plugin

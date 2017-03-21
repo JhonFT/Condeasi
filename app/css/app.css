@@ -1,0 +1,41 @@
+@import './var.css';
+
+/* Media Queries  */
+@custom-media --mobile (max-width: 500px);
+@custom-media --tablet (max-width: 650px);
+@custom-media --desktop (max-width: 800px);
+@lost flexbox flex;
+
+/* Mixins */
+
+@define-mixin title $textColor, $size{
+	color: $(textColor);
+	font-size: $(size);
+}
+
+body{
+	background-color: var(--bg-fondo);
+	
+	h1{
+		font-size: 40px;
+		color: var(--text-black);
+		@mixin title var(--text-black), 50px;
+	}
+	section{
+		lost-center:  100%; 
+		lost-utility: clearfix;
+		div{
+			lost-column:  1/5;
+			background-color: red;
+			font-size: responsive 20px 30px;
+			height: 15px;
+		}
+	}
+}
+
+@media (--tablet){
+	body{
+		background-color: red;
+	}
+}
+
