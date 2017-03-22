@@ -29,7 +29,7 @@ const config = {
 	},
 	target: 'web',
 	plugins: [
-		new ExtractTextPlugin('../css/app.css'),
+		new ExtractTextPlugin('../../app/css/app.css'),
 	],
 };
 

@@ -4,7 +4,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-
+import Header from '../header/Header.jsx';
 import Home from '../home/Home.jsx';
 import Error404 from './Error404.jsx';
 
@@ -14,10 +14,7 @@ import Error404 from './Error404.jsx';
 const Pages = () => (
   <Router>
     <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-      </ul>
+      <Header />
       <Route exact path="/" component={Home}/>
       <Route path="/about" component={Error404}/>
     </div>

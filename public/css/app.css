@@ -1,8 +1,151 @@
-.Login{
+*{
+	margin: 0;
+	padding: 0;
 }
-.Login-form{
-	width: 300px;
-	height: 500px;
-	margin: 0 auto;
 
+.Header{
+	background-color: white;
+	width: 100%;
+	border-botom: 1px solid black;
+	box-shadow: 1px 3px 4px #8b8b8b;
+	padding: 20px;
+}
+
+.Header-title{
+	color: #3c3c3c;
+	margin:  0;
+	font-size: calc(60px + 20 * ((100vw - 420px) / 860));
+	font-family: 'Lobster Two', cursive;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.Header-title span{
+	color: #c11010;
+}
+
+.Header-nav{
+	background-color: #f0f0f0;
+	display: none;
+}
+
+.Header-nav ul{
+	list-style: none;
+	display: -webkit-box;
+	display: flex;
+}
+
+.Header-nav ul li{
+	-webkit-box-flex: 0;
+	        flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: calc(99.9% * 1/5 - 24px);
+	width: calc(99.9% * 1/5 - 24px);
+	padding: 20px;
+}
+
+.Header-nav ul li:nth-child(1n){
+	margin-right: 30px;
+	margin-left: 0;
+}
+
+.Header-nav ul li:last-child{
+	margin-right: 0;
+}
+
+.Header-nav ul li:nth-child(5n){
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.Header-nav ul:before{
+	content: '';
+	display: table;
+}
+
+.Header-nav ul:before li{}
+
+.Header-nav ul:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.Header-nav ul:after li{}
+
+.Login{
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-flow: row wrap;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+}
+
+.Login-form{
+	width: 100%;
+}
+
+.Login-form fieldset{
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	border-color: 0;
+	background-color: #fafafa;
+}
+
+.Login-form fieldset label{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: calc(12px + 4 * ((100vw - 420px) / 860));
+	color: #3c3c3c;
+	font-weight: 700;
+}
+
+.Login-form fieldset input{
+	width: 100%;
+	height: 25px;
+}
+
+.Login:before{
+	content: '';
+	display: table;
+}
+
+.Login:before-form fieldset label{}
+
+.Login:before-form fieldset input{}
+
+.Login:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.Login:after-form fieldset label{}
+
+.Login:after-form fieldset input{}
+
+@media screen and (min-width: 1280px){
+
+	.Header-title{
+		font-size: 80px;
+	}
+
+	.Login-form fieldset label{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 420px){
+
+	.Header-title{
+		font-size: 60px;
+	}
+
+	.Login-form fieldset label{
+		font-size: 12px;
+	}
 }

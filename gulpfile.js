@@ -15,6 +15,7 @@ let gulp = require('gulp'),
 gulp.task('server', function(){
 	browserSync.init({
 		server: {
+
 			baseDir: './public'
 		}
 	});
@@ -30,7 +31,7 @@ gulp.task('css', function(){
 		nested,
 		cssnext({browsers: ['> 5%', 'ie 8']}),
 		mqpacker,
-		cssWring(),
+		//cssWring(),
 	];
 	return gulp.src('./app/css/app.css')
 		.pipe(postcss(processors))
