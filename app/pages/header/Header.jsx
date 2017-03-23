@@ -8,12 +8,13 @@ function Header(){
 			<h1 className="Header-title">Conde<span>asi</span></h1>	
 			<nav className="Header-nav">
 			  <ul>  
-		        <li><Link to="/">Home</Link></li>
-		        <li><Link to="/about">About</Link></li>
+		        <li><Link to="/">Login</Link></li>
+		        <li><Link to="/home">Home</Link></li>
 		      </ul>
       		</nav>
 		</header>
 	)
 }
+
 
 export default Header;

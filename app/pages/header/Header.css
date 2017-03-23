@@ -10,37 +10,29 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+	min-height: 100hv;
+}
 .Header{
-	background-color: white;
+	background-color: #c11010;
 	width: 100%;
 	border-botom: 1px solid black;
-	box-shadow: 1px 3px 4px #8b8b8b;
 	padding: 20px;
+	box-sizing: border-box;
 
 	&-title{
-		color: var(--text-black);
+		color: white;
 		margin:  0;
 		font-size: responsive 60px 80px;
 		font-family:  var(--titled-font);
 		font-weight: 700;
 		font-style: italic;
-
+		
 		span{
-			color: var(--text-red);
+			color: #2b0000;
 		}
 	}
-
 	&-nav{
-		background-color: #f0f0f0;
 		display: none;
-		ul{
-			list-style: none;
-			display: flex;	
-			lost-utility: clearfix;
-			li{
-				lost-column:  1/5;
-				padding: 20px;
-			}
-		}
 	}
 }

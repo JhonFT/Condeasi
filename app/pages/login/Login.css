@@ -1,41 +1,3 @@
-:root{
-	--titled-font: 'Lobster Two', cursive;
-	--text-red:   #c11010;
-	--text-black: #3c3c3c;
-}
-
-@lost flexbox flex;
-
-*{
-	margin: 0;
-	padding: 0;
-}
-html{
-	min-height: 100hv;
-}
-.Header{
-	background-color: #c11010;
-	width: 100%;
-	border-botom: 1px solid black;
-	padding: 20px;
-	box-sizing: border-box;
-
-	&-title{
-		color: white;
-		margin:  0;
-		font-size: responsive 60px 80px;
-		font-family:  var(--titled-font);
-		font-weight: 700;
-		font-style: italic;
-		
-		span{
-			color: #2b0000;
-		}
-	}
-	&-nav{
-		display: none;
-	}
-}
 
 :root{
 	--font-text: 'Josefin Sans', sans-serif;
@@ -131,43 +93,5 @@ html{
 	    	}
 	    	
 	    }
-	}
-}
-:root{
-	--font-text: 'Josefin Sans', sans-serif;
-	--text-black: #3c3c3c;
-	--titled-font: 'Lobster Two', cursive;
-	--text-red:   #c11010;
-	--color-red:   #c11010;
-}
-
-
-@lost flexbox flex;
-.Home{
-	&-content{
-		h1{
-			font-family: var(--titled-font);
-			text-align: center;
-			font-size: responsive 40px 60px;
-			margin: 20px;
-
-		}
-		ul{
-			lost-center:  80%;
-			margin-top: 50px;
-			li{
-				lost-column:  1/6 no-flex;
-				list-style: none;
-				img{
-					width: 100%;
-				}
-				p{
-					text-align: center;
-					font-family: var(--font-text);
-					font-size: 20px;
-					font-weight: 700;
-				}
-			}
-		}
 	}
 }

@@ -3,16 +3,20 @@
 	padding: 0;
 }
 
+html{
+	min-height: 100hv;
+}
+
 .Header{
-	background-color: white;
+	background-color: #c11010;
 	width: 100%;
 	border-botom: 1px solid black;
-	box-shadow: 1px 3px 4px #8b8b8b;
 	padding: 20px;
+	box-sizing: border-box;
 }
 
 .Header-title{
-	color: #3c3c3c;
+	color: white;
 	margin:  0;
 	font-size: calc(60px + 20 * ((100vw - 420px) / 860));
 	font-family: 'Lobster Two', cursive;
@@ -21,112 +25,192 @@
 }
 
 .Header-title span{
-	color: #c11010;
+	color: #2b0000;
 }
 
 .Header-nav{
-	background-color: #f0f0f0;
 	display: none;
 }
 
-.Header-nav ul{
-	list-style: none;
+.Login-content{
+	height: 300px;
 	display: -webkit-box;
 	display: flex;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #c11010;
 }
 
-.Header-nav ul li{
-	-webkit-box-flex: 0;
-	        flex-grow: 0;
-	flex-shrink: 0;
-	flex-basis: calc(99.9% * 1/5 - 24px);
-	width: calc(99.9% * 1/5 - 24px);
-	padding: 20px;
+.Login-content-title{
+	color: #3c3c3c;
+	margin:  0;
+	font-size: calc(60px + 40 * ((100vw - 420px) / 860));
+	font-family: 'Lobster Two', cursive;
+	font-weight: 700;
+	font-style: italic;
+	color: white;
 }
 
-.Header-nav ul li:nth-child(1n){
-	margin-right: 30px;
-	margin-left: 0;
+.Login-content-title span{
+	color: #2b0000;
 }
 
-.Header-nav ul li:last-child{
-	margin-right: 0;
+.Login-content-form{
+	padding: 60px;
 }
 
-.Header-nav ul li:nth-child(5n){
-	margin-right: 0;
-	margin-left: auto;
+.Login-content-form fieldset{
+	max-width: 300px;
+	padding: 40px;
+	border-radius: 12px;
+	position: relative;
+	border:  0px;
+	background-color: #e6e6e6;
 }
 
-.Header-nav ul:before{
-	content: '';
-	display: table;
+.Login-content-form fieldset input[type="text"], .Login-content-form fieldset input[type="password"]{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	border: 1px solid #888888;
+	padding: 5px;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+	font-size: 18px;
 }
 
-.Header-nav ul:before li{}
-
-.Header-nav ul:after{
-	content: '';
-	display: table;
-	clear: both;
+.Login-content-form fieldset h2{
+	font-family: 'Lobster Two', cursive;
+	text-align: center;
+	font-size: calc(40px + 20 * ((100vw - 420px) / 860));
+	color: #c11010;
+	font-weight: 700;
+	margin-bottom: 5px;
 }
 
-.Header-nav ul:after li{}
+.Login-content-form fieldset input[type="submit"]{
+	width: 100%;
+	height: 35px;
+	background-color: #c11010;
+	border: 1px solid #770d0d;
+	border-radius: 4px;
+	color: white;
+	font-size: 18px;
+	font-family: 'Lobster Two', cursive;
+}
 
-.Login{
+.Login-content-form fieldset a{
+	font-style: none;
+	color: #565656;
+	font-family: 'Josefin Sans', sans-serif;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin-top: 5px;
+}
+
+.Login-content-form fieldset .dir{
+	width: 0;
+	height: 0;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-right: 20px solid #e6e6e6;
+	position: absolute;
+	top: -50%;
+	left: -20px;
+	margin-top: 50%;
+}
+
+.Login-content{
+	-webkit-box-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	        align-items: center;
+}
+
+.Login-content-title span{}
+
+.Login-content-form fieldset input[type="text"], .Login-content-form fieldset input[type="password"]{}
+
+.Login-content-form fieldset h2{}
+
+.Login-content-form fieldset input[type="submit"]{}
+
+.Login-content-form fieldset a{}
+
+.Login-content-form fieldset .dir{}
+
+.Home-content h1{
+	font-family: 'Lobster Two', cursive;
+	text-align: center;
+	font-size: calc(40px + 20 * ((100vw - 420px) / 860));
+	margin: 20px;
+}
+
+.Home-content ul{
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	        flex-flow: row wrap;
-	max-width: 100%;
+	max-width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 70px;
+	margin-top: 50px;
 }
 
-.Login-form{
+.Home-content ul li{
+	width: calc(99.9% * 1/6 - 25px);
+	list-style: none;
+}
+
+.Home-content ul li img{
 	width: 100%;
 }
 
-.Login-form fieldset{
-	width: 100%;
-	height: 100%;
-	padding: 20px;
-	border-color: 0;
-	background-color: #fafafa;
-}
-
-.Login-form fieldset label{
+.Home-content ul li p{
+	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: calc(12px + 4 * ((100vw - 420px) / 860));
-	color: #3c3c3c;
+	font-size: 20px;
 	font-weight: 700;
 }
 
-.Login-form fieldset input{
-	width: 100%;
-	height: 25px;
+.Home-content ul li:nth-child(1n){
+	float: left;
+	margin-right: 30px;
+	clear: none;
 }
 
-.Login:before{
-	content: '';
-	display: table;
+.Home-content ul li:nth-child(1n) img{}
+
+.Home-content ul li:nth-child(1n) p{}
+
+.Home-content ul li:last-child{
+	margin-right: 0;
 }
 
-.Login:before-form fieldset label{}
+.Home-content ul li:last-child img{}
 
-.Login:before-form fieldset input{}
+.Home-content ul li:last-child p{}
 
-.Login:after{
-	content: '';
-	display: table;
+.Home-content ul li:nth-child(6n){
+	margin-right: 0;
+	float: right;
+}
+
+.Home-content ul li:nth-child(6n) img{}
+
+.Home-content ul li:nth-child(6n) p{}
+
+.Home-content ul li:nth-child(6n + 1){
 	clear: both;
 }
 
-.Login:after-form fieldset label{}
+.Home-content ul li:nth-child(6n + 1) img{}
 
-.Login:after-form fieldset input{}
+.Home-content ul li:nth-child(6n + 1) p{}
 
 @media screen and (min-width: 1280px){
 
@@ -134,8 +218,16 @@
 		font-size: 80px;
 	}
 
-	.Login-form fieldset label{
-		font-size: 16px;
+	.Login-content-title{
+		font-size: 100px;
+	}
+
+	.Login-content-form fieldset h2{
+		font-size: 60px;
+	}
+
+	.Home-content h1{
+		font-size: 60px;
 	}
 }
 
@@ -145,7 +237,15 @@
 		font-size: 60px;
 	}
 
-	.Login-form fieldset label{
-		font-size: 12px;
+	.Login-content-title{
+		font-size: 60px;
+	}
+
+	.Login-content-form fieldset h2{
+		font-size: 40px;
+	}
+
+	.Home-content h1{
+		font-size: 40px;
 	}
 }

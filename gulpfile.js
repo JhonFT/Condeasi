@@ -40,8 +40,10 @@ gulp.task('css', function(){
 });
 
 
+
 gulp.task('watch', function(){
 	gulp.watch('./app/css/*.css',['css']);
+	gulp.watch('./public/statics/*.js').on('change', browserSync.reload);
 	gulp.watch('./app/*.html').on('change', browserSync.reload);
 });
 

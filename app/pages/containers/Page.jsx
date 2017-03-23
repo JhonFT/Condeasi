@@ -1,24 +1,40 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
-  Link
+  Switch,
+  Link,
 } from 'react-router-dom';
 import Header from '../header/Header.jsx';
+import Login from '../login/Login.jsx';
 import Home from '../home/Home.jsx';
 import Error404 from './Error404.jsx';
 
 
-
-
 const Pages = () => (
   <Router>
-    <div>
-      <Header />
-      <Route exact path="/" component={Home}/>
-      <Route path="/about" component={Error404}/>
+    <div>  
+      <Switch>
+        <Route path="/" exact component={Login}/>
+        <Route path="/home" component={Homes}/>
+        <Route component={NoMatch}/>
+      </Switch>
     </div>
   </Router>
 )
+
+
+const Homes = () =>{
+  return (<div>
+    <Header />
+    <Home />
+  </div>)
+}
+const NoMatch = ({ location }) => (
+  <div>
+    <h3>No match for <code>{location.pathname}</code></h3>
+  </div>
+)
+
 
 export default Pages;
