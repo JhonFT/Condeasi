@@ -13,6 +13,7 @@ html{
 	border-botom: 1px solid black;
 	padding: 20px;
 	box-sizing: border-box;
+	position: relative;
 }
 
 .Header-title{
@@ -28,8 +29,52 @@ html{
 	color: #2b0000;
 }
 
+.Header-menu{
+	position: absolute;
+	top: 25%;
+	right: 20px;
+	cursor: pointer;
+	width: 60px;
+}
+
+.Header-menu img {
+	max-width: 100%;
+}
+
 .Header-nav{
-	display: none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 250px;
+	padding: 10px;
+	height: 100%;
+	background-color: #141414;
+	box-shadow: -3px 0px 5px #0f0f0f;
+}
+
+.Header-nav li{
+	list-style: none;
+	padding:  30px 20px;
+}
+
+.Header-nav li a{
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+}
+
+.Header-nav-close{
+	position: absolute;
+	right: 20px;
+	top: 30px;
+	width: 50px;
+}
+
+.Header-nav-close img{
+	max-width: 100%;
+	cursor: pointer;
 }
 
 .Login-content{
@@ -147,6 +192,17 @@ html{
 	text-align: center;
 	font-size: calc(40px + 20 * ((100vw - 420px) / 860));
 	margin: 20px;
+	margin-bottom: 0;
+	color: #8d0d0d;
+}
+
+.Home-content > p{
+	text-align: center;
+	line-height: 1;
+	font-weight: 700;
+	font-size: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #3c3c3c;
 }
 
 .Home-content ul{
@@ -159,6 +215,7 @@ html{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
+	max-width: 1200px;
 }
 
 .Home-content ul li{
@@ -168,6 +225,7 @@ html{
 
 .Home-content ul li img{
 	width: 100%;
+	cursor: pointer;
 }
 
 .Home-content ul li p{
@@ -175,6 +233,7 @@ html{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 20px;
 	font-weight: 700;
+	color: #3c3c3c;
 }
 
 .Home-content ul li:nth-child(1n){

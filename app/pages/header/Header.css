@@ -2,6 +2,7 @@
 	--titled-font: 'Lobster Two', cursive;
 	--text-red:   #c11010;
 	--text-black: #3c3c3c;
+	--font-text: 'Josefin Sans', sans-serif;
 }
 
 @lost flexbox flex;
@@ -19,6 +20,7 @@ html{
 	border-botom: 1px solid black;
 	padding: 20px;
 	box-sizing: border-box;
+	position: relative;
 
 	&-title{
 		color: white;
@@ -32,7 +34,48 @@ html{
 			color: #2b0000;
 		}
 	}
+	&-menu{
+		position: absolute;
+		top: 25%;
+		right: 20px;
+		cursor: pointer;
+		width: 60px;
+	    img {
+			max-width: 100%;
+	    }
+	}
 	&-nav{
-		display: none;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 250px;
+		padding: 10px;
+		height: 100%;
+		background-color: #141414;
+		box-shadow: -3px 0px 5px #0f0f0f;
+		li{
+			list-style: none;
+			padding:  30px 20px;
+			a{
+		    	text-decoration: none;
+		    	font-size: 25px;
+		    	color: white;
+		    	font-family: var(--font-text);
+		    	font-weight: 700;
+	    	}
+		}
+
+		&-close{
+			    position: absolute;
+			    right: 20px;
+			    top: 30px;
+			    width: 50px;
+
+			    img{
+			    	max-width: 100%;
+			    	cursor: pointer;
+			    }
+		}
+	    
 	}
 }

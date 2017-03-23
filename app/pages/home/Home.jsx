@@ -9,6 +9,7 @@ class Home extends Component {
         <section name="Home" className="Home">
           <section className="Home-content">
             <h1>Bienvenido a Condeasi</h1>
+            <p>Condeasi te ayuda hacer mas facil tu vida</p>
             <ul>
               <li>
                 <img src="../img/For-teachers-flat.png" alt=""/>
@@ -16,7 +17,7 @@ class Home extends Component {
               </li>
               <li>
                 <img src="../img/student.png" alt=""/>
-                <p>Crear Usuario</p>
+                <p>Crear Estudiante</p>
               </li>
               <li>
                 <img src="../img/matery.png" alt=""/>
