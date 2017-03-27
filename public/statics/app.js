@@ -10673,6 +10673,14 @@ var _Home = __webpack_require__(96);
 
 var _Home2 = _interopRequireDefault(_Home);
 
+var _Docente = __webpack_require__(234);
+
+var _Docente2 = _interopRequireDefault(_Docente);
+
+var _Estudiante = __webpack_require__(237);
+
+var _Estudiante2 = _interopRequireDefault(_Estudiante);
+
 var _Error = __webpack_require__(95);
 
 var _Error2 = _interopRequireDefault(_Error);
@@ -10690,6 +10698,8 @@ const Pages = () => _react2.default.createElement(
       null,
       _react2.default.createElement(_reactRouterDom.Route, { path: '/', exact: true, component: _Login2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '/home', component: Homes }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/docente', component: createDocente }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/estudiante', component: createEstidiante }),
       _react2.default.createElement(_reactRouterDom.Route, { component: NoMatch })
     )
   )
@@ -10701,6 +10711,23 @@ const Homes = () => {
     null,
     _react2.default.createElement(_Header2.default, null),
     _react2.default.createElement(_Home2.default, null)
+  );
+};
+
+const createDocente = () => {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(_Header2.default, null),
+    _react2.default.createElement(_Docente2.default, null)
+  );
+};
+const createEstidiante = () => {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(_Header2.default, null),
+    _react2.default.createElement(_Estudiante2.default, null)
   );
 };
 const NoMatch = ({ location }) => _react2.default.createElement(
@@ -25711,6 +25738,284 @@ var _page2 = _interopRequireDefault(_page);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _reactDom.render)(_react2.default.createElement(_page2.default, null), document.getElementById('render-target'));
+
+/***/ }),
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Header = __webpack_require__(61);
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _Docente = __webpack_require__(235);
+
+var _Docente2 = _interopRequireDefault(_Docente);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+class Docente extends _react.Component {
+  render() {
+    return _react2.default.createElement(
+      'section',
+      { name: 'Docente', className: 'Docente' },
+      _react2.default.createElement(
+        'h1',
+        null,
+        'Crear Docente'
+      ),
+      _react2.default.createElement(
+        'section',
+        { className: 'Docente-content' },
+        _react2.default.createElement(
+          'figure',
+          { className: 'Docente-content-img' },
+          _react2.default.createElement('img', { src: '../img/Dslr-Camera-icon.png', alt: '' }),
+          _react2.default.createElement(
+            'button',
+            null,
+            'Cambiar'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'Docente-content-form' },
+          _react2.default.createElement(
+            'from',
+            null,
+            _react2.default.createElement(
+              'fieldset',
+              null,
+              _react2.default.createElement(
+                'label',
+                null,
+                'Nombre: '
+              ),
+              _react2.default.createElement('input', { type: 'text' }),
+              _react2.default.createElement(
+                'label',
+                null,
+                'Apellido: '
+              ),
+              _react2.default.createElement('input', { type: 'text' }),
+              _react2.default.createElement(
+                'label',
+                null,
+                'Identificacion: '
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'Docente-content-form-id' },
+                _react2.default.createElement(
+                  'select',
+                  null,
+                  _react2.default.createElement(
+                    'option',
+                    null,
+                    '.:Sel:.'
+                  ),
+                  _react2.default.createElement(
+                    'option',
+                    { value: '1' },
+                    'CC'
+                  ),
+                  _react2.default.createElement(
+                    'option',
+                    { value: '2' },
+                    'CE'
+                  )
+                ),
+                _react2.default.createElement('input', { type: 'text' })
+              ),
+              _react2.default.createElement(
+                'label',
+                null,
+                'Codigo: '
+              ),
+              _react2.default.createElement('input', { type: 'text' }),
+              _react2.default.createElement(
+                'label',
+                null,
+                'Usuario: '
+              ),
+              _react2.default.createElement('input', { type: 'text' }),
+              _react2.default.createElement(
+                'label',
+                null,
+                'Clave: '
+              ),
+              _react2.default.createElement('input', { type: 'text' }),
+              _react2.default.createElement('input', { type: 'submit', value: 'Guardar' })
+            )
+          )
+        )
+      )
+    );
+  }
+}
+
+exports.default = Docente;
+
+/***/ }),
+/* 235 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 236 */,
+/* 237 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Header = __webpack_require__(61);
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _Estudiante = __webpack_require__(238);
+
+var _Estudiante2 = _interopRequireDefault(_Estudiante);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+class Estudiante extends _react.Component {
+  render() {
+    return _react2.default.createElement(
+      'section',
+      { name: 'Estudiante', className: 'Estudiante' },
+      _react2.default.createElement(
+        'h1',
+        null,
+        'Crear Estudiante'
+      ),
+      _react2.default.createElement(
+        'section',
+        { className: 'Estudiante-content' },
+        _react2.default.createElement(
+          'figure',
+          { className: 'Estudiante-content-img' },
+          _react2.default.createElement('img', { src: '../img/Dslr-Camera-icon.png', alt: '' }),
+          _react2.default.createElement(
+            'button',
+            null,
+            'Cambiar'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'Estudiante-content-form' },
+          _react2.default.createElement(
+            'from',
+            null,
+            _react2.default.createElement(
+              'fieldset',
+              null,
+              _react2.default.createElement(
+                'label',
+                null,
+                'Nombre: '
+              ),
+              _react2.default.createElement('input', { type: 'text' }),
+              _react2.default.createElement(
+                'label',
+                null,
+                'Apellido: '
+              ),
+              _react2.default.createElement('input', { type: 'text' }),
+              _react2.default.createElement(
+                'label',
+                null,
+                'Identificacion: '
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'Estudiante-content-form-id' },
+                _react2.default.createElement(
+                  'select',
+                  null,
+                  _react2.default.createElement(
+                    'option',
+                    null,
+                    '.:Sel:.'
+                  ),
+                  _react2.default.createElement(
+                    'option',
+                    { value: '1' },
+                    'CC'
+                  ),
+                  _react2.default.createElement(
+                    'option',
+                    { value: '2' },
+                    'CE'
+                  )
+                ),
+                _react2.default.createElement('input', { type: 'text' })
+              ),
+              _react2.default.createElement(
+                'label',
+                null,
+                'Codigo: '
+              ),
+              _react2.default.createElement('input', { type: 'text' }),
+              _react2.default.createElement(
+                'label',
+                null,
+                'Telefono: '
+              ),
+              _react2.default.createElement('input', { type: 'text' }),
+              _react2.default.createElement(
+                'label',
+                null,
+                'Correo: '
+              ),
+              _react2.default.createElement('input', { type: 'email' }),
+              _react2.default.createElement('input', { type: 'submit', value: 'Guardar' })
+            )
+          )
+        )
+      )
+    );
+  }
+}
+
+exports.default = Estudiante;
+
+/***/ }),
+/* 238 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

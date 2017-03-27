@@ -8,6 +8,8 @@ import {
 import Header from '../header/Header.jsx';
 import Login from '../login/Login.jsx';
 import Home from '../home/Home.jsx';
+import Docente from '../docente/Docente.jsx';
+import Estudiante from '../estudiante/Estudiante.jsx';
 import Error404 from './Error404.jsx';
 
 
@@ -17,6 +19,8 @@ const Pages = () => (
       <Switch>
         <Route path="/" exact component={Login}/>
         <Route path="/home" component={Homes}/>
+        <Route path="/docente" component={createDocente}/>
+        <Route path="/estudiante" component={createEstidiante}/>
         <Route component={NoMatch}/>
       </Switch>
     </div>
@@ -28,6 +32,21 @@ const Homes = () =>{
   return (<div>
     <Header />
     <Home />
+  </div>)
+}
+
+
+const createDocente = () =>{
+  return (<div>
+    <Header />
+    <Docente />
+  </div>)
+
+}
+const createEstidiante = () =>{
+  return (<div>
+    <Header />
+    <Estudiante />
   </div>)
 }
 const NoMatch = ({ location }) => (

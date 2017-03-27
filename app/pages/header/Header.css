@@ -52,6 +52,7 @@ html{
 		padding: 10px;
 		height: 100%;
 		background-color: #141414;
+		display: none;
 		box-shadow: -3px 0px 5px #0f0f0f;
 		li{
 			list-style: none;
