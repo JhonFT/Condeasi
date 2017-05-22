@@ -4,7 +4,8 @@ import style from './Home.css';
 
 
 class Home extends Component {
- render() {
+
+  render() {
     return (
         <section name="Home" className="Home">
           <section className="Home-content">

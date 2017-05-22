@@ -172,6 +172,15 @@ html{
 					left: -20px;
 					margin-top: 50%;
 	    		}
+	    		.error{
+    			    color: #c11010;
+    			    font-family: var(--font-text);
+    			    text-align: center;
+    			    width: 100%;
+    			    display: block;
+    			    font-size: 13px;
+    			    font-weight: 700;
+    			}
 	    	}
 	    	
 	    }
@@ -434,6 +443,353 @@ html{
 					border-right: 0px;
 				}
 			}
+		}
+	}
+}
+:root{
+	--font-text: 'Josefin Sans', sans-serif;
+	--text-black: #3c3c3c;
+	--titled-font: 'Lobster Two', cursive;
+	--text-red:   #c11010;
+	--color-red:   #c11010;
+}
+
+
+@lost flexbox flex;
+.Asignatura{
+	h1{
+		text-align: center;
+		font-family: var(--titled-font);
+		margin:  20px;
+		font-size: 60px;
+		margin-bottom: 0;
+	}
+	&-content{
+		max-width: 1000px;
+		margin: 0 auto;
+
+		&-form{
+				text-align: right;
+				border:  0px;
+				font-size: 0;
+				lost-center: 1140px 30px flex;
+				
+			div{
+				height: auto;
+				padding: 0 15px;
+				line-height: 25px;
+				font-weight: normal;
+				lost-column: 1/2;
+				box-sizing: border-box;
+			}
+
+			label{
+				display: block;
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 15px;
+				font-weight: 700;
+				text-align: left;
+				padding: 5px;
+			}
+			input{
+				height: 30px;
+				width: 100%;
+				font-family: var(--font-text);
+				padding: 5px;
+				box-sizing: border-box;
+			}
+
+			input[type="submit"]{
+				width: 50%;
+				max-width: 300px;
+				background: #d92738;
+				font-size: 20px;
+				color: white;
+				font-family: 'Lobster Two', cursive;
+				/* font-weight: 700; */
+				border: 0px;
+				margin: 10px 0px;
+				padding: 5px;
+				height: auto;
+				cursor: pointer;
+			}
+		select{
+				height: 30px;
+				width: 100%;
+				display: inline-block !important;
+				text-align: center;
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 17px;
+				box-sizing: border-box;
+				vertical-align: bottom;
+			}
+				
+		}
+	&-table{
+		padding: 40px;
+		input[type="text"]{
+			height: 30px;
+			width: 200px;
+			font-family: var(--font-text);
+			padding: 5px;
+			box-sizing: border-box;
+			float: right;
+			margin-bottom: 20px;
+		}
+
+		table{
+			width: 100%;
+			border-collapse: collapse;
+
+			th, td{
+				font-family: 'Josefin Sans', sans-serif;
+				padding: 5px;
+				border: 1px solid darkgrey;
+				
+			}
+		}
+	}
+	&-save{
+		text-align: right;
+		input{
+			display: inline-block;
+			max-width: 300px;
+			background: #d92738;
+			font-size: 20px;
+			color: white;
+			font-family: 'Lobster Two', cursive;
+			/* font-weight: 700; */
+			border: 0px;
+			margin: 10px 0px;
+			padding: 5px 20px;
+			height: auto;
+			cursor: pointer;
+		}
+	}
+	
+	}
+}
+
+.center{
+	text-align: center;
+}
+
+:root{
+	--font-text: 'Josefin Sans', sans-serif;
+	--text-black: #3c3c3c;
+	--titled-font: 'Lobster Two', cursive;
+	--text-red:   #c11010;
+	--color-red:   #c11010;
+}
+
+
+@lost flexbox flex;
+.Modificar{
+	h1{
+		text-align: center;
+		font-family: var(--titled-font);
+		margin:  20px;
+		font-size: 60px;
+		margin-bottom: 0;
+	}
+	&-content{
+		lost-center:  100%;
+		max-width: 800px;
+		max-height: 80%;
+		padding: 40px;
+
+		&-form, &-img{
+			lost-column:  1/2;
+		}
+
+		&-img{
+			img{
+				width: 100%;
+    			background-color: #fc6e51;
+			}
+			button{
+				background: #c11010;
+				border: 0px;
+				height: 38px;
+				width: 100%;
+				font-family: var(--titled-font);
+				font-weight: 700;
+				font-size: 20px;
+				color: white;
+				cursor: pointer;
+			}
+		}
+
+		&-form{
+			fieldset{
+				text-align: right;
+				border:  0px;
+				label{
+					display: block;
+					font-family: 'Josefin Sans', sans-serif;
+					font-size: 15px;
+					font-weight: 700;
+					text-align: left;
+					padding: 5px;
+				}
+				input{
+					height: 30px;
+					width: 100%;
+					font-family: var(--font-text);
+					padding: 5px;
+					box-sizing: border-box;
+				}
+
+				input[type="submit"]{
+					width: 50%;
+					max-width: 300px;
+					background: #d92738;
+					font-size: 20px;
+					color: white;
+					font-family: 'Lobster Two', cursive;
+					/* font-weight: 700; */
+					border: 0px;
+					margin: 10px 0px;
+					padding: 5px;
+					height: auto;
+					cursor: pointer;
+				}
+
+			}
+			&-id{
+				font-size: 0 !important; 
+				input{
+					height: 30px;
+					width: 79% !important;
+					display: inline-block !important;
+				}
+				select{
+					height: 30px;
+					width: 20%;
+					display: inline-block !important;
+					text-align: center;
+					font-family: 'Josefin Sans', sans-serif;
+					font-size: 17px;
+					box-sizing: border-box;
+					vertical-align: bottom;
+					border-right: 0px;
+				}
+			}
+		}
+	}
+}
+:root{
+	--font-text: 'Josefin Sans', sans-serif;
+	--text-black: #3c3c3c;
+	--titled-font: 'Lobster Two', cursive;
+	--text-red:   #c11010;
+	--color-red:   #c11010;
+}
+
+
+@lost flexbox flex;
+.Abrir{
+	h1{
+		text-align: center;
+		font-family: var(--titled-font);
+		margin:  20px;
+		font-size: 60px;
+		margin-bottom: 0;
+	}
+	&-content{
+		text-align: center;
+		margin: 20px;
+		max-width: 50%;
+		margin: 40px auto;
+		input{
+			display: inline-block;
+			max-width: 300px;
+			background: #d92738;
+			font-size: 20px;
+			width: 50%;
+			margin-left: 50%;
+			color: white;
+			font-family: 'Lobster Two', cursive;
+			border: 0px;
+			margin: 20px 0px;
+			padding: 5px 20px;
+			height: auto;
+			cursor: pointer;
+		}
+		label{
+			text-align: left;
+			display: block;
+			font-weight: 700;
+			padding: 5px 0;
+			font-family: var(--font-text);
+		}
+		select{
+			height: 30px;
+			width: 100%;
+			display: inline-block !important;
+			text-align: center;
+			font-family: 'Josefin Sans', sans-serif;
+			font-size: 17px;
+			box-sizing: border-box;
+			vertical-align: bottom;
+		}
+	}
+}
+:root{
+	--font-text: 'Josefin Sans', sans-serif;
+	--text-black: #3c3c3c;
+	--titled-font: 'Lobster Two', cursive;
+	--text-red:   #c11010;
+	--color-red:   #c11010;
+}
+
+
+@lost flexbox flex;
+.Asistencia{
+	h1{
+		text-align: center;
+		font-family: var(--titled-font);
+		margin:  20px;
+		font-size: 60px;
+		margin-bottom: 0;
+	}
+	&-content{
+		text-align: center;
+		margin: 20px;
+		max-width: 50%;
+		margin: 40px auto;
+		input[type="submit"]{
+			display: inline-block;
+			max-width: 300px;
+			background: #d92738;
+			font-size: 20px;
+			width: 50%;
+			margin-left: 50%;
+			color: white;
+			font-family: 'Lobster Two', cursive;
+			border: 0px;
+			margin: 20px 0px;
+			padding: 5px 20px;
+			height: auto;
+			cursor: pointer;
+		}
+		label{
+			text-align: left;
+			display: block;
+			font-weight: 700;
+			padding: 5px 0;
+			font-family: var(--font-text);
+		}
+		select, input[type="text"]{
+			height: 30px;
+			width: 100%;
+			display: inline-block !important;
+			text-align: center;
+			font-family: 'Josefin Sans', sans-serif;
+			font-size: 17px;
+			box-sizing: border-box;
+			vertical-align: bottom;
+			text-align: left;
 		}
 	}
 }

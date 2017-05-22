@@ -169,6 +169,16 @@ html{
 	margin-top: 50%;
 }
 
+.Login-content-form fieldset .error{
+	color: #c11010;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+}
+
 .Login-content{
 	-webkit-box-pack: center;
 	        justify-content: center;
@@ -187,6 +197,8 @@ html{
 .Login-content-form fieldset a{}
 
 .Login-content-form fieldset .dir{}
+
+.Login-content-form fieldset .error{}
 
 .Home-content h1{
 	font-family: 'Lobster Two', cursive;
@@ -510,6 +522,374 @@ html{
 	box-sizing: border-box;
 	vertical-align: bottom;
 	border-right: 0px;
+}
+
+.Asignatura h1{
+	text-align: center;
+	font-family: 'Lobster Two', cursive;
+	margin:  20px;
+	font-size: 60px;
+	margin-bottom: 0;
+}
+
+.Asignatura-content{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.Asignatura-content-form{
+	text-align: right;
+	border:  0px;
+	font-size: 0;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-flow: row wrap;
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.Asignatura-content-form div{
+	height: auto;
+	padding: 0 15px;
+	line-height: 25px;
+	font-weight: normal;
+	-webkit-box-flex: 0;
+	        flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: calc(99.9% * 1/2 - 15px);
+	width: calc(99.9% * 1/2 - 15px);
+	box-sizing: border-box;
+}
+
+.Asignatura-content-form div:nth-child(1n){
+	margin-right: 30px;
+	margin-left: 0;
+}
+
+.Asignatura-content-form div:last-child{
+	margin-right: 0;
+}
+
+.Asignatura-content-form div:nth-child(2n){
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.Asignatura-content-form label{
+	display: block;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: left;
+	padding: 5px;
+}
+
+.Asignatura-content-form input{
+	height: 30px;
+	width: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.Asignatura-content-form input[type="submit"]{
+	width: 50%;
+	max-width: 300px;
+	background: #d92738;
+	font-size: 20px;
+	color: white;
+	font-family: 'Lobster Two', cursive;
+	/* font-weight: 700; */
+	border: 0px;
+	margin: 10px 0px;
+	padding: 5px;
+	height: auto;
+	cursor: pointer;
+}
+
+.Asignatura-content-form select{
+	height: 30px;
+	width: 100%;
+	display: inline-block !important;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+	box-sizing: border-box;
+	vertical-align: bottom;
+}
+
+.Asignatura-content-table{
+	padding: 40px;
+}
+
+.Asignatura-content-table input[type="text"]{
+	height: 30px;
+	width: 200px;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 5px;
+	box-sizing: border-box;
+	float: right;
+	margin-bottom: 20px;
+}
+
+.Asignatura-content-table table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.Asignatura-content-table table th, .Asignatura-content-table table td{
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 5px;
+	border: 1px solid darkgrey;
+}
+
+.Asignatura-content-save{
+	text-align: right;
+}
+
+.Asignatura-content-save input{
+	display: inline-block;
+	max-width: 300px;
+	background: #d92738;
+	font-size: 20px;
+	color: white;
+	font-family: 'Lobster Two', cursive;
+	/* font-weight: 700; */
+	border: 0px;
+	margin: 10px 0px;
+	padding: 5px 20px;
+	height: auto;
+	cursor: pointer;
+}
+
+.center{
+	text-align: center;
+}
+
+.Modificar h1{
+	text-align: center;
+	font-family: 'Lobster Two', cursive;
+	margin:  20px;
+	font-size: 60px;
+	margin-bottom: 0;
+}
+
+.Modificar-content{
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-flow: row wrap;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	max-height: 80%;
+	padding: 40px;
+}
+
+.Modificar-content-form, .Modificar-content-img{
+	-webkit-box-flex: 0;
+	        flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: calc(99.9% * 1/2 - 15px);
+	width: calc(99.9% * 1/2 - 15px);
+}
+
+.Modificar-content-form:nth-child(1n), .Modificar-content-img:nth-child(1n){
+	margin-right: 30px;
+	margin-left: 0;
+}
+
+.Modificar-content-form:last-child, .Modificar-content-img:last-child{
+	margin-right: 0;
+}
+
+.Modificar-content-form:nth-child(2n), .Modificar-content-img:nth-child(2n){
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.Modificar-content-img img{
+	width: 100%;
+	background-color: #fc6e51;
+}
+
+.Modificar-content-img button{
+	background: #c11010;
+	border: 0px;
+	height: 38px;
+	width: 100%;
+	font-family: 'Lobster Two', cursive;
+	font-weight: 700;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+}
+
+.Modificar-content-form fieldset{
+	text-align: right;
+	border:  0px;
+}
+
+.Modificar-content-form fieldset label{
+	display: block;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: left;
+	padding: 5px;
+}
+
+.Modificar-content-form fieldset input{
+	height: 30px;
+	width: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.Modificar-content-form fieldset input[type="submit"]{
+	width: 50%;
+	max-width: 300px;
+	background: #d92738;
+	font-size: 20px;
+	color: white;
+	font-family: 'Lobster Two', cursive;
+	/* font-weight: 700; */
+	border: 0px;
+	margin: 10px 0px;
+	padding: 5px;
+	height: auto;
+	cursor: pointer;
+}
+
+.Modificar-content-form-id{
+	font-size: 0 !important;
+}
+
+.Modificar-content-form-id input{
+	height: 30px;
+	width: 79% !important;
+	display: inline-block !important;
+}
+
+.Modificar-content-form-id select{
+	height: 30px;
+	width: 20%;
+	display: inline-block !important;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+	box-sizing: border-box;
+	vertical-align: bottom;
+	border-right: 0px;
+}
+
+.Abrir h1{
+	text-align: center;
+	font-family: 'Lobster Two', cursive;
+	margin:  20px;
+	font-size: 60px;
+	margin-bottom: 0;
+}
+
+.Abrir-content{
+	text-align: center;
+	margin: 20px;
+	max-width: 50%;
+	margin: 40px auto;
+}
+
+.Abrir-content input{
+	display: inline-block;
+	max-width: 300px;
+	background: #d92738;
+	font-size: 20px;
+	width: 50%;
+	margin-left: 50%;
+	color: white;
+	font-family: 'Lobster Two', cursive;
+	border: 0px;
+	margin: 20px 0px;
+	padding: 5px 20px;
+	height: auto;
+	cursor: pointer;
+}
+
+.Abrir-content label{
+	text-align: left;
+	display: block;
+	font-weight: 700;
+	padding: 5px 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.Abrir-content select{
+	height: 30px;
+	width: 100%;
+	display: inline-block !important;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+	box-sizing: border-box;
+	vertical-align: bottom;
+}
+
+.Asistencia h1{
+	text-align: center;
+	font-family: 'Lobster Two', cursive;
+	margin:  20px;
+	font-size: 60px;
+	margin-bottom: 0;
+}
+
+.Asistencia-content{
+	text-align: center;
+	margin: 20px;
+	max-width: 50%;
+	margin: 40px auto;
+}
+
+.Asistencia-content input[type="submit"]{
+	display: inline-block;
+	max-width: 300px;
+	background: #d92738;
+	font-size: 20px;
+	width: 50%;
+	margin-left: 50%;
+	color: white;
+	font-family: 'Lobster Two', cursive;
+	border: 0px;
+	margin: 20px 0px;
+	padding: 5px 20px;
+	height: auto;
+	cursor: pointer;
+}
+
+.Asistencia-content label{
+	text-align: left;
+	display: block;
+	font-weight: 700;
+	padding: 5px 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.Asistencia-content select, .Asistencia-content input[type="text"]{
+	height: 30px;
+	width: 100%;
+	display: inline-block !important;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+	box-sizing: border-box;
+	vertical-align: bottom;
+	text-align: left;
 }
 
 @media screen and (min-width: 1280px){

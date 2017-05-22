@@ -90,6 +90,15 @@
 					left: -20px;
 					margin-top: 50%;
 	    		}
+	    		.error{
+    			    color: #c11010;
+    			    font-family: var(--font-text);
+    			    text-align: center;
+    			    width: 100%;
+    			    display: block;
+    			    font-size: 13px;
+    			    font-weight: 700;
+    			}
 	    	}
 	    	
 	    }
